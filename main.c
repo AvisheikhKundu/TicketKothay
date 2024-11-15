@@ -223,11 +223,3 @@ void busLists()
   printf("\n   PRESS 'ENTER' KEY TO CONTINUE ");
   getch();
 }
-
-void cancel(int randomNum)
-{
-  int reservationNo;
-  int seatNumber;
-  int choice;
-  char c;
-  int seatCancel;
