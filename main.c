@@ -1,3 +1,7 @@
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -231,6 +235,7 @@ void cancel(int randomNum)
   int choice;
   char c;
   int seatCancel;
+<<<<<<< HEAD
   aa:
 {
   printf("\nENTER YOUR RESERVATION NUMBER : ");
@@ -281,3 +286,25 @@ int main()
   BST *root1;
   login();
 main:
+{
+  do
+  {
+    printf("\n\n====================================================================\n\n");
+    printf("\t\t\t\033[1;32mBUS RESERVATION\033[0m\t\t");
+    printf("\n\n=====================================================================\n");
+    printf("\n====================");
+    greenColor();
+    printf("  MAIN MENU ");
+    resetColor();
+    printf("=====================\n\n");
+    printf("   \033[1;32m[1]\033[0m VIEW BUS LIST \n\n");
+    printf("   \033[1;32m[2]\033[0m BOOK TICKETS\n\n");
+    printf("   \033[1;32m[3]\033[0m CANCEL BOOKING\n\n");
+    printf("   \033[1;32m[4]\033[0m BUSES SEATS INFO\n\n");
+    printf("   \033[1;32m[5]\033[0m RESERVATION INFO\n\n");
+    printf("   \033[1;32m[6]\033[0m EXIT\n");
+    printf("\n=====================================================\n");
+    printf("\n   ENTER YOUR CHOICE: ");
+    scanf("%d", &num);
+    switch (num)
+    {
