@@ -231,3 +231,53 @@ void cancel(int randomNum)
   int choice;
   char c;
   int seatCancel;
+  aa:
+{
+  printf("\nENTER YOUR RESERVATION NUMBER : ");
+  scanf("%d", &reservationNo);
+  if (reservationNo == randomNum)
+  {
+    printf("\nRESERVATION NUMBER IS IT CORRECT ? %d \nENTER (Y/N) : ", reservationNo);
+    scanf("%s", &c);
+    if (c == 'y' || c == 'Y')
+    {
+      printf("\n\n============================================\n\n");
+      printf("   ENTER THE BUS NUMBER: ");
+      scanf("%d", &choice);
+
+      printf("\n HOW MANY SEATS DO WANT TO CANCEL : ");
+      scanf("%d", &seatCancel);
+      for (int i = 0; i < seatCancel; i++)
+      {
+        printf("   \nENTER THE SEAT NUMBER: ");
+        scanf("%d", &seatNumber);
+
+        busSeat[choice][seatNumber] = 0;
+      }
+      printf("\n\nYOUR RESERVATION HAS BEEN CANCEL !!\n\n");
+      printf("\n  PRESS 'ENTER' KEY TO CONTINUE \n");
+      getch();
+      DisplaySeat(busSeat[choice]);
+    }
+
+    else if (c == 'n' || c == 'N')
+    {
+      printf("\nYOUR RESERVATION CANCELATION HAS BEEN DENIED\n");
+    }
+  }
+  else
+  {
+    printf("\nNOT FOUND!! ENTER THE CORRECT RESERVATION NUMBER\n");
+    goto aa;
+  }
+}
+}
+
+int main()
+{
+  srand(time(0));
+  int randomNum = rand();
+  int num, i, custID, reservationNo;
+  BST *root1;
+  login();
+main:
