@@ -308,3 +308,10 @@ main:
     scanf("%d", &num);
     switch (num)
     {
+case 1:
+      busLists();
+      break;
+    case 2:
+      busLists();
+
+      int CustId, choice, seats;
