@@ -315,3 +315,20 @@ case 1:
       busLists();
 
       int CustId, choice, seats;
+ busChoice:
+      printf("\n\nCHOOSE YOUR BUS  : ");
+      scanf("%d", &choice);
+      if (choice <= 0 || choice > 9)
+      {
+        greenColor();
+        printf("\nENTER VALID BUS NUMBER !! \n");
+        resetColor();
+        getch();
+        goto busChoice;
+      }
+      printf("\n");
+      DisplaySeat(busSeat[choice]);
+    busSeatChoice:
+      printf("\n\nNO. OF SEATS YOU NEED TO BOOK : ");
+      scanf("%d", &seats);
+      if (seats <= 0)
