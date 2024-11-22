@@ -338,3 +338,4 @@ case 1:
         resetColor();
         goto busSeatChoice;
       }
+      
