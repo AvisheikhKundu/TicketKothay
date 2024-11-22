@@ -332,3 +332,9 @@ case 1:
       printf("\n\nNO. OF SEATS YOU NEED TO BOOK : ");
       scanf("%d", &seats);
       if (seats <= 0)
+      {
+        greenColor();
+        printf("\nENTER VALID SEAT NUMBER!!\n");
+        resetColor();
+        goto busSeatChoice;
+      }
