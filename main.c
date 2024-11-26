@@ -349,3 +349,37 @@ case 1:
       for (int i = 1; i <= seats; i++)
       {
         printf("\n\n==================================================================================\n\n");
+ seat:
+        printf("   ENTER THE SEAT NUMBER: ");
+        scanf("%d", &seatNumber);
+        if (seatNumber <= 0)
+        {
+          greenColor();
+          printf("\n   ENTER VALID SEAT NUMBER!!\n\n");
+          resetColor();
+          goto seat;
+        }
+        else if (seatNumber > 32)
+        {
+          greenColor();
+          printf("\n   ENTER VALID SEAT NUMBER WE HAVE ONLY 32 SEATS IN A BUS !!\n\n");
+          resetColor();
+          goto seat;
+        }
+        CustId = choice * 1000 + seatNumber;
+        busSeat[choice][seatNumber] = 1;
+        root = insert(&root, CustId);
+        greenColor();
+        printf("\n   YOUR CUSTOMER ID IS : %d", CustId);
+        resetColor();
+        printf("\n\n==================================================================================\n\n");
+      }
+      printf("\nYOUR RESERVATION NUMBER IS : ");
+      greenColor();
+      printf("%d\n", randomNum);
+      printf("\nPLEASE NOTE DOWN YOUR RESERVATION NUMBER FOR CANCEL BOOKING TICKETS!!\n");
+      resetColor();
+      printf("PRESS 'ENTER' KEY TO CONTINUE ");
+      getch();
+      break;
+
