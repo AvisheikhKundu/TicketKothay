@@ -1,5 +1,6 @@
-
-
+//Author: @AvisheikhKundu
+//Date: 26/11/2024
+//App Name : TicketKothay
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -234,7 +235,7 @@ void cancel(int randomNum)
   int choice;
   char c;
   int seatCancel;
-<<<<<<< HEAD
+
   aa:
 {
   printf("\nENTER YOUR RESERVATION NUMBER : ");
@@ -337,7 +338,6 @@ case 1:
         resetColor();
         goto busSeatChoice;
       }
-<<<<<<< HEAD
       else if (seats > 32)
       {
         greenColor();
