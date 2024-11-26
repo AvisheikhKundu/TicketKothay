@@ -392,3 +392,20 @@ case 3:
     takingReservationNo:
       printf("\n   ENTER YOUR RESERVATION NUMBER :");
       scanf("%d", &reservationNo);
+      if (randomNum == reservationNo)
+      {
+      cust:
+        printf("\n   ENTER YOUR CUSTOMER ID :");
+        scanf("%d", &custID);
+        int custIDmatched = 0;
+        root1 = reservationInfo(root, custID, &custIDmatched);
+        if (custIDmatched == 0)
+        {
+          greenColor();
+           printf("\n   ENTER CORRECT CUSTOMER ID!!\n");
+          resetColor();
+          goto cust;
+        }
+      }
+      else
+      {
