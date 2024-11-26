@@ -382,3 +382,14 @@ case 1:
       printf("PRESS 'ENTER' KEY TO CONTINUE ");
       getch();
       break;
+case 3:
+      cancel(randomNum);
+      break;
+    case 4:
+      status(randomNum);
+      break;
+    case 5:
+    takingReservationNo:
+      printf("\n   ENTER YOUR RESERVATION NUMBER :");
+      scanf("%d", &reservationNo);
+
