@@ -392,4 +392,3 @@ case 3:
     takingReservationNo:
       printf("\n   ENTER YOUR RESERVATION NUMBER :");
       scanf("%d", &reservationNo);
-
