@@ -1,7 +1,6 @@
 
 
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -338,6 +337,7 @@ case 1:
         resetColor();
         goto busSeatChoice;
       }
+<<<<<<< HEAD
       else if (seats > 32)
       {
         greenColor();
@@ -382,4 +382,3 @@ case 1:
       printf("PRESS 'ENTER' KEY TO CONTINUE ");
       getch();
       break;
-
