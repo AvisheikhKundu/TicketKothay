@@ -338,4 +338,14 @@ case 1:
         resetColor();
         goto busSeatChoice;
       }
-      
+      else if (seats > 32)
+      {
+        greenColor();
+        printf("\nENTER VALID SEAT NUMBER WE HAVE ONLY 32 SEATS IN A BUS !!\n");
+        resetColor();
+        goto busSeatChoice;
+      }
+      int seatNumber;
+      for (int i = 1; i <= seats; i++)
+      {
+        printf("\n\n==================================================================================\n\n");
