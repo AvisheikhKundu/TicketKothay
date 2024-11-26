@@ -409,3 +409,25 @@ case 3:
       }
       else
       {
+greenColor();
+        printf("\n INVALID RESERVATION NUMBER PLEASE ENTER CORRECT RESERVATION NUMBER !!\n");
+        resetColor();
+        goto takingReservationNo;
+      }
+      break;
+    default:
+      greenColor();
+     printf("\n\n   INVALID INPUT CHOOSE CORRECT OPTION\n");
+      resetColor();
+      break; 
+    }
+    
+  } while (num != 6);
+  printf("\n\n=====================================================================\n\n");
+  printf("THANK YOU FOR USING THIS Ticket Reservation Application !!\n");
+  printf("\n\nPRESS ANY KEY TO EXIT THE END PROGRAM !! \n");
+  printf("\n\n");
+  getch();
+  return 0;
+}
+}
