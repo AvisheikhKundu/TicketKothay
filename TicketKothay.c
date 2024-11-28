@@ -141,7 +141,7 @@ void login()
 
   greenColor();
   printf("\n\n=========================================================================================\n");
-  printf("\n\t\t\t\tWELCOME TO OUR BUS TERMINAL\n\n\t\t\t\t   \'Have a safe Journry\'");
+  printf("\n\t\t\t\tWELCOME TO TicketKothay Application\n\n\t\t\t\t   \'Have a safe Journry\'");
   printf("\n\n=========================================================================================\n\n");
   resetColor();
 
