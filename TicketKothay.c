@@ -57,7 +57,7 @@ BST *reservationInfo(BST *r, int s, int *custIDmatched)
       printf("\n||              CUSTOMER ID: %d                              ||", presentnode->PassnNo);
       printf("\n||              BUS NUMBER: %d                                  ||", (presentnode->PassnNo) / 1000);
       printf("\n||              SEAT NUMBER: %d                                 ||", (presentnode->PassnNo) % 100);
-      printf("\n||              TICKET COST: Tk.%d                             ||", cost(presentnode));
+      printf("\n||              TICKET COST: Tk.%d                           ||", cost(presentnode));
       printf("\n-----------------------------------------------------------------");
       resetColor();
       getch();
