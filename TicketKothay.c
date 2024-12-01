@@ -1,7 +1,3 @@
-//Author: @AvisheikhKundu
-//Date: 26/11/2024
-//App Name : TicketKothay
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -132,7 +128,6 @@ void DisplaySeat(int bus[33])
 }
 
 void login()
-
 {
   char userName[20] = "user";
   char passWord[20] = "Avisheikh001";
@@ -313,77 +308,141 @@ main:
 case 1:
       busLists();
       break;
-    case 2:
-      busLists();
+case 2:
+    busLists();
 
-      int CustId, choice, seats;
- busChoice:
-      printf("\n\nCHOOSE YOUR BUS  : ");
-      scanf("%d", &choice);
-      if (choice <= 0 || choice > 9)
-      {
+    int CustId, choice, seats;
+busChoice:
+    printf("\n\nCHOOSE YOUR BUS  : ");
+    scanf("%d", &choice);
+    if (choice <= 0 || choice > 9)
+    {
         greenColor();
         printf("\nENTER VALID BUS NUMBER !! \n");
         resetColor();
         getch();
         goto busChoice;
-      }
-      printf("\n");
-      DisplaySeat(busSeat[choice]);
-    busSeatChoice:
-      printf("\n\nNO. OF SEATS YOU NEED TO BOOK : ");
-      scanf("%d", &seats);
-      if (seats <= 0)
-      {
+    }
+    printf("\n");
+    DisplaySeat(busSeat[choice]);
+busSeatChoice:
+    printf("\n\nNO. OF SEATS YOU NEED TO BOOK : ");
+    scanf("%d", &seats);
+    if (seats <= 0)
+    {
         greenColor();
         printf("\nENTER VALID SEAT NUMBER!!\n");
         resetColor();
         goto busSeatChoice;
-      }
-      else if (seats > 32)
-      {
+    }
+    else if (seats > 32)
+    {
         greenColor();
         printf("\nENTER VALID SEAT NUMBER WE HAVE ONLY 32 SEATS IN A BUS !!\n");
         resetColor();
         goto busSeatChoice;
-      }
-      int seatNumber;
-      for (int i = 1; i <= seats; i++)
-      {
+    }
+
+    int totalCost = 0;
+    int seatNumber;
+    for (int i = 1; i <= seats; i++)
+    {
         printf("\n\n==================================================================================\n\n");
- seat:
+seat:
         printf("   ENTER THE SEAT NUMBER: ");
         scanf("%d", &seatNumber);
-        if (seatNumber <= 0)
+        if (seatNumber <= 0 || seatNumber > 32)
         {
-          greenColor();
-          printf("\n   ENTER VALID SEAT NUMBER!!\n\n");
-          resetColor();
-          goto seat;
+            greenColor();
+            printf("\n   ENTER VALID SEAT NUMBER!!\n\n");
+            resetColor();
+            goto seat;
         }
-        else if (seatNumber > 32)
+        if (busSeat[choice][seatNumber] == 1)
         {
-          greenColor();
-          printf("\n   ENTER VALID SEAT NUMBER WE HAVE ONLY 32 SEATS IN A BUS !!\n\n");
-          resetColor();
-          goto seat;
+            greenColor();
+            printf("\n   SEAT ALREADY BOOKED! CHOOSE ANOTHER SEAT!!\n\n");
+            resetColor();
+            goto seat;
         }
+
         CustId = choice * 1000 + seatNumber;
         busSeat[choice][seatNumber] = 1;
         root = insert(&root, CustId);
         greenColor();
         printf("\n   YOUR CUSTOMER ID IS : %d", CustId);
         resetColor();
-        printf("\n\n==================================================================================\n\n");
-      }
-      printf("\nYOUR RESERVATION NUMBER IS : ");
-      greenColor();
-      printf("%d\n", randomNum);
-      printf("\nPLEASE NOTE DOWN YOUR RESERVATION NUMBER FOR CANCEL BOOKING TICKETS!!\n");
-      resetColor();
-      printf("PRESS 'ENTER' KEY TO CONTINUE ");
-      getch();
-      break;
+
+        // Add the cost for this seat
+        totalCost += cost(root);
+    }
+
+    // Display total cost and handle payment
+    printf("\n\n==================================================================================\n");
+    printf("   TOTAL COST FOR YOUR BOOKING: Tk.%d", totalCost);
+    printf("\n   DO YOU WANT TO PROCEED WITH PAYMENT? (Y/N): ");
+    char paymentConfirmation;
+    scanf(" %c", &paymentConfirmation);
+
+    if (paymentConfirmation == 'Y' || paymentConfirmation == 'y')
+    {
+        greenColor();
+        printf("\n   PLEASE CHOOSE A PAYMENT METHOD:\n");
+        printf("   [1] Mobile Banking\n");
+        printf("   [2] Credit/Debit Card\n");
+        resetColor();
+        int paymentMethod;
+        scanf("%d", &paymentMethod);
+
+        if (paymentMethod == 1)
+        {
+            // Mobile Banking Info
+            char mobileBankingInfo[50];
+            greenColor();
+            printf("\n   ENTER YOUR MOBILE BANKING DETAILS (Phone Number or Account Number): ");
+            resetColor();
+            scanf(" %[^\n]s", mobileBankingInfo);
+            greenColor();
+            printf("\n   PAYMENT SUCCESSFUL VIA MOBILE BANKING! YOUR TICKETS ARE CONFIRMED.\n");
+            resetColor();
+        }
+        else if (paymentMethod == 2)
+        {
+            // Card Info
+            char cardInfo[50];
+            greenColor();
+            printf("\n   ENTER YOUR CARD DETAILS (Card Number, Expiry Date, CVV): ");
+            resetColor();
+            scanf(" %[^\n]s", cardInfo);
+            greenColor();
+            printf("\n   PAYMENT SUCCESSFUL VIA CARD! YOUR TICKETS ARE CONFIRMED.\n");
+            resetColor();
+        }
+        else
+        {
+            greenColor();
+            printf("\n   INVALID PAYMENT METHOD! CANCELLING TRANSACTION.\n");
+            resetColor();
+        }
+
+        printf("\n   YOUR RESERVATION NUMBER IS : %d", randomNum);
+        printf("\n   PLEASE NOTE DOWN YOUR RESERVATION NUMBER FOR CANCEL BOOKING TICKETS!!\n");
+    }
+    else
+    {
+        // Cancel the booking if payment is not successful
+        for (int i = 1; i <= seats; i++)
+        {
+            busSeat[choice][seatNumber] = 0; // Reset the seat status
+        }
+        greenColor();
+        printf("\n   PAYMENT CANCELED. SEATS HAVE BEEN RELEASED.\n");
+        resetColor();
+    }
+    printf("\nPRESS 'ENTER' KEY TO CONTINUE ");
+    getch();
+    break;
+
 case 3:
       cancel(randomNum);
       break;
@@ -426,7 +485,7 @@ greenColor();
     
   } while (num != 6);
   printf("\n\n=====================================================================\n\n");
-  printf("THANK YOU FOR USING THIS Ticket Reservation Application !!\n");
+  printf("THANK YOU FOR USING TicketKothay Application !!\n");
   printf("\n\nPRESS ANY KEY TO EXIT THE END PROGRAM !! \n");
   printf("\n\n");
   getch();
