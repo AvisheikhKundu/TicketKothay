@@ -1,20 +1,9 @@
-CREATE TABLE IF NOT EXISTS Reservations (
-    PassnNo INTEGER PRIMARY KEY,
-    Name TEXT NOT NULL
-);
+sqlite3 *db;
+char *err_msg = 0;
+int rc = sqlite3_open("bus_reservations.db", &db);
 
-CREATE TABLE IF NOT EXISTS Reservations (
-    PassnNo INTEGER PRIMARY KEY,
-    Name TEXT NOT NULL,
-    ReservationDate DATE NOT NULL,
-    NumberOfGuests INTEGER NOT NULL,
-    ContactNumber TEXT
-);
-
-CREATE TABLE IF NOT EXISTS Reservations (
-    PassnNo INTEGER PRIMARY KEY,
-    Name TEXT NOT NULL,
-    ReservationDate DATE NOT NULL,
-    NumberOfGuests INTEGER NOT NULL,
-    ContactNumber TEXT
-);
+if (rc != SQLITE_OK) {
+    fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
+    sqlite3_close(db);
+    return 1;
+}
