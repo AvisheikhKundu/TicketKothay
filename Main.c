@@ -364,11 +364,11 @@ main:
                 printf("\n   YOUR CUSTOMER ID IS : %d", CustId);
                 resetColor();
 
-                // Add the cost for this seat
+               
                 totalCost += cost(root);
             }
 
-            // Display total cost and handle payment
+            
             printf("\n\n==================================================================================\n");
             printf("   TOTAL COST FOR YOUR BOOKING: Tk.%d", totalCost);
             printf("\n   DO YOU WANT TO PROCEED WITH PAYMENT? (Y/N): ");
@@ -387,7 +387,7 @@ main:
 
                 if (paymentMethod == 1)
                 {
-                    // Mobile Banking Info
+                    
                     int bankChoice;
                     greenColor();
                     printf("\n   SELECT YOUR MOBILE BANKING OPTION:\n");
@@ -408,7 +408,7 @@ main:
                     resetColor();
                     scanf("%s", accountPassword);
 
-                    // Confirmation prompt
+                    
                     char confirmation[10];
                     greenColor();
                     printf("\n   CONFIRM PAYMENT? (Type 'CONFIRM' to confirm or 'CANCEL' to cancel): ");
@@ -427,16 +427,16 @@ main:
                         greenColor();
                         printf("\n   PAYMENT CANCELED.\n");
                         resetColor();
-                        // Optionally, you can release the seats if payment fails
+                        
                         for (int i = 1; i <= seats; i++)
                         {
-                            busSeat[choice][seatNumber] = 0; // Reset the seat status
+                            busSeat[choice][seatNumber] = 0; 
                         }
                     }
                 }
                 else if (paymentMethod == 2)
                 {
-                    // Card Info
+                    
                     char cardInfo[50];
                     greenColor();
                     printf("\n   ENTER YOUR CARD DETAILS (Card Number, Expiry Date, CVV): ");
@@ -458,10 +458,10 @@ main:
             }
             else
             {
-                // Cancel the booking if payment is not successful
+                
                 for (int i = 1; i <= seats; i++)
                 {
-                    busSeat[choice][seatNumber] = 0; // Reset the seat status
+                    busSeat[choice][seatNumber] = 0; 
                 }
                 greenColor();
                 printf("\n   PAYMENT CANCELED. SEATS HAVE BEEN RELEASED.\n");

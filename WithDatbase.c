@@ -510,7 +510,7 @@ main:
             resetColor();
             break; 
         }
-    } while (num != 6); // Fixed missing semicolon
+    } while (num != 6); 
     printf("\n\n=====================================================================\n\n");
     printf("THANK YOU FOR USING TicketKothay Application !!\n");
     printf("\n\nPRESS ANY KEY TO EXIT THE END PROGRAM !! \n");
