@@ -1,3 +1,9 @@
+//Author : @AvisheikhKundu
+//Date : 22/11/2024
+//Description : A SOLUTION FOR BUS TICKET BUYING FROM MULTIPLE COMPANIES
+//Language : C
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
