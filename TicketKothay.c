@@ -3,7 +3,7 @@
 //Description : A SOLUTION FOR BUS TICKET BUYING FROM MULTIPLE COMPANIES
 //Language : C
 //Compiler : GCC
-//OS : Ubuntu, Windows,MacOS
+//OS : Ubuntu, Windows, MacOS
 //License : MIT
 //Version : 2.0
 
