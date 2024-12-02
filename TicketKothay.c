@@ -2,6 +2,10 @@
 //Date : 22/11/2024
 //Description : A SOLUTION FOR BUS TICKET BUYING FROM MULTIPLE COMPANIES
 //Language : C
+//Compiler : GCC
+//OS : Ubuntu, Windows,MacOS
+//License : MIT
+//Version : 2.0
 
 
 #include <stdio.h>
