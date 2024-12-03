@@ -6,14 +6,14 @@ seamless platform for booking bus tickets. Currently, passengers need to visit i
 offices or websites, which is time-consuming and inconvenient. Additionally, there is often a lack of 
 transparency regarding seat availability and pricing, leading to inefficiencies in planning trips. 
  
-##### Problem Statement: 
+#### Problem Statement: 
 With the increasing demand for accessible and streamlined digital services, the absence of a centralized 
 bus ticket booking system creates a gap in the market. Users face: 
 • Difficulty comparing ticket prices across different companies. 
 • Inefficiency in booking tickets due to the need to use multiple platforms. 
 • Lack of real-time availability updates and booking confirmation. 
  
-##### Objective: 
+#### Objective: 
 TicketKothay was developed as a unified platform that allows users to purchase bus tickets from 
 multiple companies efficiently. By leveraging the C programming language, the application provides a 
 reliable and user-friendly system for booking tickets, ensuring convenience and transparency for 
