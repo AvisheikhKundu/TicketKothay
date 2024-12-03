@@ -1,6 +1,6 @@
 # TicketKothay
 
-### 1.1   Introduction
+### Introduction
 The public transportation sector in Bangladesh faces challenges in providing travelers with a unified and 
 seamless platform for booking bus tickets. Currently, passengers need to visit individual bus companies’ 
 offices or websites, which is time-consuming and inconvenient. Additionally, there is often a lack of 
@@ -19,7 +19,7 @@ multiple companies efficiently. By leveraging the C programming language, the ap
 reliable and user-friendly system for booking tickets, ensuring convenience and transparency for 
 travelers. 
  
-### 1.2   Motivation 
+### Motivation 
  The advancement of digital solutions has transformed many industries, yet the public transportation 
 sector, particularly bus ticket booking, remains fragmented in Bangladesh. Leveraging the power of 
 computational tools and programming, I was motivated to design an application that can simplify this 
