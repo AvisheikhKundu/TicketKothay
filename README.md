@@ -30,7 +30,8 @@ presented an exciting opportunity to develop a robust and efficient solution.
 
 # TicketKothay
 
-<video controls src="TicketKothay_Fully_Functional-1.mp4" title="Title"></video>
+##   Process of Booking Tickets
+
 ### 1
 ![Screenshot(1)](https://github.com/user-attachments/assets/49ba11c2-89df-4dc9-a8ad-c6beee93233a)
 ### 2
