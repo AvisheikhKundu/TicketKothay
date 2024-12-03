@@ -1,5 +1,6 @@
 # TicketKothay
-
+## A SOLUTION FOR BUS TICKET BUYING FROM MULTIPLE COMPANIES 
+ 
 <video controls src="TicketKothay_Fully_Functional-1.mp4" title="Title"></video>
 ### 1
 ![Screenshot(1)](https://github.com/user-attachments/assets/49ba11c2-89df-4dc9-a8ad-c6beee93233a)
