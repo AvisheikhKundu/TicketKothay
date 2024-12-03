@@ -1,9 +1,4 @@
 # TicketKothay
-<<<<<<< HEAD
-## A SOLUTION FOR BUS TICKET BUYING FROM MULTIPLE COMPANIES 
- 
-<video controls src="TicketKothay_Fully_Functional-1.mp4" title="Title"></video>
-=======
 
 ### Introduction
 The public transportation sector in Bangladesh faces challenges in providing travelers with a unified and 
@@ -37,7 +32,6 @@ presented an exciting opportunity to develop a robust and efficient solution.
 
 ##   Process of Booking Tickets
 
->>>>>>> 29be5b2a68c427f725479bf510ad21b699fca757
 ### 1
 ![Screenshot(1)](https://github.com/user-attachments/assets/49ba11c2-89df-4dc9-a8ad-c6beee93233a)
 ### 2
