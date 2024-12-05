@@ -8,7 +8,6 @@ if (rc != SQLITE_OK) {
     sqlite3_close(db);
     return 1;
 }
-
 sqlite3_bind_int(stmt, 1, custID);
 sqlite3_bind_int(stmt, 2, choice);
 sqlite3_bind_int(stmt, 3, seatNumber);
