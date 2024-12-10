@@ -10,7 +10,7 @@ transparency regarding seat availability and pricing, leading to inefficiencies 
 #### Problem Statement: 
 With the increasing demand for accessible and streamlined digital services, the absence of a centralized 
 bus ticket booking system creates a gap in the market. 
-####### Users face: 
+Users face: 
 • Difficulty comparing ticket prices across different companies. 
 • Inefficiency in booking tickets due to the need to use multiple platforms. 
 • Lack of real-time availability updates and booking confirmation. 
