@@ -36,9 +36,9 @@ presented an exciting opportunity to develop a robust and efficient solution.
 ##   Process of Booking Tickets
 
 ### 1
-![Screenshot(1)](https://github.com/user-attachments/assets/49ba11c2-89df-4dc9-a8ad-c6beee93233a)
-### 2
 ![Screenshot(02)](https://github.com/user-attachments/assets/6af499e1-0823-4f0f-99b9-1297fbae2c69)
+### 2
+![Screenshot(1)](https://github.com/user-attachments/assets/49ba11c2-89df-4dc9-a8ad-c6beee93233a)
 ### 3
 ![Screenshot(03)](https://github.com/user-attachments/assets/c39ce4d9-1caf-4428-b1aa-b364f03774ea)
 ### 4
