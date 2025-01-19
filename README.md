@@ -1,5 +1,3 @@
-
-
 # TicketKothay
 
 ### Introduction
