@@ -19,6 +19,7 @@ TicketKothay was developed as a unified platform that allows users to purchase b
 multiple companies efficiently. By leveraging the C programming language, the application provides a 
 reliable and user-friendly system for booking tickets, ensuring convenience and transparency for 
 travelers. 
+
  
 ### Motivation 
  The advancement of digital solutions has transformed many industries, yet the public transportation 
