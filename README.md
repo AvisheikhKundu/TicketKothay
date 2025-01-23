@@ -30,7 +30,6 @@ data streams, real-time updates, and user-friendly interfaces using the C progra
 presented an exciting opportunity to develop a robust and efficient solution. 
 
 
-
 # TicketKothay
 
 
