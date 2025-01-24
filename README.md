@@ -29,7 +29,6 @@ process by unifying multiple ticket providers under one platform. The challenge 
 data streams, real-time updates, and user-friendly interfaces using the C programming language 
 presented an exciting opportunity to develop a robust and efficient solution. 
 
-
 # TicketKothay
 
 
