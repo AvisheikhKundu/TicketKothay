@@ -1,7 +1,7 @@
 # TicketKothay
 ### Introduction
 The public transportation sector in Bangladesh faces challenges in providing travelers with a unified and 
-seamless platform for booking bus tickets. Currently, passengers need to visit individual bus companies’ 
+seamless platform for booking bus tickets. Currently, passengers need to visit individual bus companies 
 offices or websites, which is time-consuming and inconvenient. Additionally, there is often a lack of 
 transparency regarding seat availability and pricing, leading to inefficiencies in planning trips. 
  
